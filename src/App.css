@@ -1,0 +1,75 @@
+body{
+  background-color: rgb(172, 189, 197) !important;
+  
+
+}
+.nav{
+  background-color:rgb(37, 37, 83) !important;
+}
+
+.nav  a{
+  color: aliceblue;
+}
+.mainDiv{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap:10px
+  
+}
+
+.topHeadlineContainer{
+  position: absolute;
+  animation: move 70s linear infinite;
+}
+
+@keyframes move{
+  0%{
+  bottom: 20%;
+  }
+  100%{
+    bottom: 100%;
+  }
+}
+.rightSide{
+  position: relative;
+  overflow: hidden;
+  background-color: black !important;
+}  
+.headLinesTitle{
+  background-color:rgb(37, 37, 83) !important;
+  color: aliceblue;
+position: absolute;
+z-index: 2;
+width: 100%;
+left:0;
+
+
+}
+.headline a{
+  color: aliceblue;
+}
+.text.single-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width:589px){
+  .rightSide{
+    display: none;
+  }
+  .leftside{
+    width: 100% !important;
+    
+  }
+}
+.view{
+  width: 130px;
+  height:40px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  background-color: rgb(37, 37, 83) !important;
+
+}
+ 
